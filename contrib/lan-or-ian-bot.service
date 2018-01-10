@@ -1,0 +1,12 @@
+[Service]
+Type=simple
+User=nobody
+Environment=LANG='en_US.UTF-8'
+Environment=SLACKBOT_API_TOKEN=xoxb-xxxx
+WorkingDirectory=/etc/lan-or-ian-bot
+ExecStart=/usr/bin/python -m lan_or_ian_bot
+Restart=always
+RestartSec=5
+
+[Install]
+Alias=multi-user.target.wants/doorbot.service
