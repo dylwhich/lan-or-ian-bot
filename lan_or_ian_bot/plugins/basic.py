@@ -14,6 +14,7 @@ def handle_multiple(message):
 
     if has_ian and has_lan:
         message.reply(">>>" + repl_multi(message.body['text']), in_thread=True)
+        return True
 
     return False
 
