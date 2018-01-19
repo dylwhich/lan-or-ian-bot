@@ -23,6 +23,5 @@ def the_person(message):
     if not handle_multiple(message):
         if re.search(RE_IAN, message.body['text']):
             message.react('ian')
-            message.reply("`Ian`", in_thread=True)
         elif re.search(RE_LAN, message.body['text']):
-            message.reply("`LAN`", in_thread=True)
+            message.react('dongles-l')
